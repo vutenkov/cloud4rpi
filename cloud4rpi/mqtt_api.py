@@ -25,8 +25,6 @@ class MqttApi(object):
                  port=config.mqttBrokerPort):
         utils.guard_against_invalid_token(device_token)
 
-        self.fail_linting()
-
         def noop_on_command(cmd):
             pass
 
